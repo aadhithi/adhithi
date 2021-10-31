@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+:root {
+    --accent: #FFFFFF;
+    --text: #AFE1AF; 
+    --back: #7393B3;
+    --ease: all 0.3s ease 0s;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--back);
+}
+h1 {
+    color: var(--text);
+}
+i {
+    color: var(--accent);
+    
+}
+p, a {
+    color: var(--text);
+    text-decoration: none;
+}
+h1 {
+    font-family: "Georgia", sans-serif;
+    font-size: 72px;
+    font-weight: 200;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "top";
+}
+.top {
+    grid-area: top;
+    background-image: url("PortfolioWebsite3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 600px 600px 1fr;
+    gap: 20px;
+    grid-template-areas: 
+    ".  top__profile top__content .";
+}
+.top__content {
+    grid-area: top__content;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+.subtitle {
+    font-family: "Georgia", sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.email{
+    font-family: "Georgia", sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.top__profile {
+    grid-area: top__profile;
+    align-self: center;
+    justify-self: center;
+    background-image: url("OpenHousePic.jpg");
+    width: 497px;
+    height: 563px;
+    background-size: cover;
+    background-position: 5% 5%;
+    background-repeat: no-repeat;
+}
