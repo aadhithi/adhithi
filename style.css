@@ -107,17 +107,36 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
     grid-template-rows: 1fr 600px 600px 1fr;
     gap: 20px;
     grid-template-areas: 
-    ". . . ."
-    ". phaco__pres . ."
-    ". . . ."
-    ". . . .";
+    ". . ."
+    ". phaco__pres ."
+    ". . . "
+    ". . . ";
 }
 .phaco__pres {
     grid-area: phaco__pres;
     align-self: center;
     justify-self: center;
-    padding: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-areas: 
+    "phaco__pres__info  phaco__pres__pp";
+}
+
+.phaco__pres__info {
+    grid-area: phaco__pres__info;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+
+.phaco__pres__pp {
+    grid-area: phaco__pres__pp;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
 }
