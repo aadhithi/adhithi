@@ -108,13 +108,18 @@ h3 {
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 1200px 1fr;
-    grid-template-rows: 1fr 600px 600px 1fr;
+    grid-template-rows: 200px 500px 500px 1fr;
     gap: 20px;
     grid-template-areas: 
-    ". . ."
+    ". proj ."
     ". phaco__pres ."
     ". . . "
     ". . . ";
+}
+.proj {
+    grid-area: proj;
+    align-self: center;
+    justify-self: center;
 }
 .phaco__pres {
     grid-area: phaco__pres;
