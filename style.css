@@ -144,3 +144,60 @@ h3 {
     justify-self: center;
     padding: 10px;
 }
+.email {
+    display: flex;
+    align-items: center;
+    transition: var(--ease);
+}
+.email__copy {
+    margin-left: 10px;
+}
+.email__copy:hover {
+    filter: brightness(125%);
+}
+
+@media only screen and (max-width: 1000px){
+    .top {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "top__profile"
+        "top__content"
+    }
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "proj"
+        "phaco__pres"
+        ".";
+    }
+    .phaco__pres {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "phaco__pres__info"
+        "phaco__pres__pp";
+    }
+    .phaco__pres__info {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 680px){
+    .top__content {
+        transform: scale(0.80);
+        transform: translate(0, -50%);
+    }
+    .top__profile {
+        display: none;
+    }
+    .proj {
+        transform: scale(0.80);
+        transform: translate(0, 10%);
+    }
+    .phaco__pres__info {
+        transform: scale(0.80);
+        transform: translate(0, -100%);
+        text-align: center;
+    }
+    .phaco__pres__pp {
+        display: none;
+    }
+}
