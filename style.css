@@ -80,6 +80,15 @@ h1 {
     background-position: 5% 5%;
     background-repeat: no-repeat;
 }
+h4 {
+    text-align: left;
+    color: var(--text);
+    display: none;
+    font-family: "Georgia", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    margin-top: 20px;
+}
 h2 {
     color: var(--text);
     font-family: "Georgia", sans-serif;
@@ -163,6 +172,16 @@ h3 {
         "top__profile"
         "top__content"
     }
+    .top__profile {
+        width: 50%;
+        height: 100%;
+        transform: translate(0,20%);
+        
+    }
+    .top__content {
+        text-align: left;
+    }
+
     .projects {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -182,22 +201,20 @@ h3 {
 }
 @media only screen and (max-width: 680px){
     .top__content {
-        transform: scale(0.80);
+        transform: scale(0.60);
         transform: translate(0, -50%);
+        text-align: left;
     }
     .top__profile {
         display: none;
     }
-    .proj {
-        transform: scale(0.80);
-        transform: translate(0, 10%);
-    }
-    .phaco__pres__info {
-        transform: scale(0.80);
-        transform: translate(0, -100%);
-        text-align: center;
-    }
-    .phaco__pres__pp {
+    hr {
         display: none;
     }
+   .uploads {
+       display: none;
+   }
+   h4 {
+       display: block;
+   }
 }
