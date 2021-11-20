@@ -200,10 +200,9 @@ h3 {
         text-align: center;
     }
 }
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 840px){
     .top__content {
         transform: scale(0.60);
-        transform: translate(0, -50%);
         text-align: left;
     }
     .top__profile {
@@ -227,14 +226,14 @@ h3 {
     }
 
     .top__profile {
-        transform: scale(0.80);
+        transform: scale(0.70);
         width: 100%;
         height: 60%;
-        transform: translate(10%,0);
+        transform: translate(40%,0);
         padding-left: 40px;
     }
     .top__content {
         text-align: left;
-        transform: scale(0.80);
+        transform: scale(0.60);
     }
 }
