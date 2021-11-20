@@ -170,11 +170,12 @@ h3 {
         grid-template-columns: 1fr;
         grid-template-areas: 
         "top__profile"
-        "top__content"
+        "top__content";
     }
     .top__profile {
         width: 50%;
         height: 100%;
+        align-self: center;
         transform: translate(0,20%);
         
     }
@@ -217,4 +218,23 @@ h3 {
    h4 {
        display: block;
    }
+}
+@media only screen and (max-height: 500px){
+    .top {
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "top__profile  top__content"
+    }
+
+    .top__profile {
+        transform: scale(0.80);
+        width: 100%;
+        height: 60%;
+        transform: translate(10%,0);
+        padding-left: 40px;
+    }
+    .top__content {
+        text-align: left;
+        transform: scale(0.80);
+    }
 }
