@@ -121,7 +121,7 @@ h3 {
     grid-template-areas: 
     ". proj ."
     ". phaco__pres ."
-    ". . . "
+    ". math__pres . "
     ". . . ";
 }
 .proj {
@@ -140,6 +140,17 @@ h3 {
     "phaco__pres__info  phaco__pres__pp";
 }
 
+.math__pres {
+    grid-area: math__pres;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-areas: 
+    "math__pres__info  math__pres__pp";
+}
+
 .phaco__pres__info {
     grid-area: phaco__pres__info;
     align-self: center;
@@ -147,8 +158,22 @@ h3 {
     padding: 10px;
 }
 
+.math__pres__info {
+    grid-area: math__pres__info;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+
 .phaco__pres__pp {
     grid-area: phaco__pres__pp;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+
+.math__pres__pp {
+    grid-area: math__pres__pp;
     align-self: center;
     justify-self: center;
     padding: 10px;
@@ -188,7 +213,7 @@ h3 {
         grid-template-areas: 
         "proj"
         "phaco__pres"
-        ".";
+        "math__pres";
     }
     .phaco__pres {
         grid-template-columns: 1fr;
@@ -196,7 +221,16 @@ h3 {
         "phaco__pres__info"
         "phaco__pres__pp";
     }
+    .math__pres {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "math__pres__info"
+        "math__pres__pp";
+    }
     .phaco__pres__info {
+        text-align: center;
+    }
+    .math__pres__info {
         text-align: center;
     }
 }
