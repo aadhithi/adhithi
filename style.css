@@ -102,7 +102,21 @@ h3 {
     font-size: 36px;
     font-weight: 200;
 }
+h5 {
+    color: var(--text);
+    font-family: "Georgia", sans-serif;
+    font-size: 72px;
+    font-weight: 200;
+}
 .subtitlemath {
+    font-family: "Georgia", sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+h6 {
+    color: var(--text);
     font-family: "Georgia", sans-serif;
     font-style: italic;
     font-size: 20px;
@@ -115,6 +129,13 @@ h3 {
     grid-template-columns: 1fr;
     grid-template-areas:
     "projects";
+}
+.school {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "classlist";
 }
 .projects {
     grid-area: projects;
@@ -130,10 +151,32 @@ h3 {
     ". proj ."
     ". phaco__pres ."
     ". math__pres . "
+    ". astro__pres . "
+    ". . .";
+}
+.classlist {
+    grid-area: classlist;
+    background-image: url("PortfolioWebsite3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-rows: 200px 500px 500px 1fr;
+    gap: 20px;
+    grid-template-areas: 
+    ". classes ."
+    ". Delist ."
+    ". . . "
     ". . . ";
 }
 .proj {
     grid-area: proj;
+    align-self: center;
+    justify-self: center;
+}
+.classes {
+    grid-area: classes;
     align-self: center;
     justify-self: center;
 }
@@ -147,6 +190,29 @@ h3 {
     grid-template-areas: 
     "phaco__pres__info  phaco__pres__pp";
 }
+.Delist {
+    grid-area: Delist;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-areas: 
+    "leftie rightie";
+}
+
+.leftie {
+    grid-area: leftie;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+.rightie {
+    grid-area: rightie;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
 
 .math__pres {
     grid-area: math__pres;
@@ -157,6 +223,16 @@ h3 {
     grid-template-columns: 600px 600px;
     grid-template-areas: 
     "math__pres__info  math__pres__pp";
+}
+.astro__pres {
+    grid-area: astro__pres;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-areas: 
+    "astro__pres__info  astro__pres__pp";
 }
 
 .phaco__pres__info {
@@ -173,6 +249,13 @@ h3 {
     padding: 10px;
 }
 
+.astro__pres__info {
+    grid-area: astro__pres__info;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+
 .phaco__pres__pp {
     grid-area: phaco__pres__pp;
     align-self: center;
@@ -182,6 +265,12 @@ h3 {
 
 .math__pres__pp {
     grid-area: math__pres__pp;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+.astro__pres__pp {
+    grid-area: astro__pres__pp;
     align-self: center;
     justify-self: center;
     padding: 10px;
@@ -221,7 +310,8 @@ h3 {
         grid-template-areas: 
         "proj"
         "phaco__pres"
-        "math__pres";
+        "math__pres"
+        "astro__pres";
     }
     .phaco__pres {
         grid-template-columns: 1fr;
@@ -235,10 +325,19 @@ h3 {
         "math__pres__info"
         "math__pres__pp";
     }
+    .astro__pres {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "astro__pres__info"
+        "astro__pres__pp";
+    }
     .phaco__pres__info {
         text-align: center;
     }
     .math__pres__info {
+        text-align: center;
+    }
+    .astro__pres__info {
         text-align: center;
     }
 }
